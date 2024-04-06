@@ -24,18 +24,6 @@ export const Content = styled.div`
   border-radius: 20px;
 `;
 
-export const ContentHome = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  max-width: 350px;
-  padding: 20px;
-  border: none;
-  background: none;
-`;
-
 export const Title = styled.p`
   font-size: 40px;
   font-weight: bold;
