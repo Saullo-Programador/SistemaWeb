@@ -16,6 +16,8 @@ const HomeScreens = () => {
                     <NavBarComponents/>
                 </G.ContainerNav>
                 <G.ContainerMain>
+                    <title>Olá, Saullo</title>
+                    <p classname="subtituloHome">sejá bem vindo ao seu gerenciador de gastos</p>
                     <ButtonComponente titulo={"Sair"} onClick={() => {signout(); navigate("/");}}></ButtonComponente>
                 </G.ContainerMain>
             </G.ContentPrincipal>
