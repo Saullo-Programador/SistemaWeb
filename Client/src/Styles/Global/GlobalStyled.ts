@@ -16,14 +16,18 @@ export const ContentPrincipal = styled.div`
 `;
 
 export const ContainerNav = styled.nav`
-  width: 17%;
+  width: 15%;
   height: 100%;
   display: flex;
+  box-shadow: 0px 2px 23px 13px rgba(0,0,0,0.2);
 `;
 
 export const ContainerMain = styled.div`
-  width: 83%;
+  width: 85%;
   height: 100%;
-  background-color: blue;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 `;
  
