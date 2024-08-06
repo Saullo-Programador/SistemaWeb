@@ -1,10 +1,14 @@
 import * as BF from "./ButtonFloatingStyled"
 import { IoAdd } from "react-icons/io5";
 
-const ButtonFloatingComponents = () => {
+interface ButtonFloatingType{
+  onClick: () => void;
+}
+
+const ButtonFloatingComponents = ({onClick}: ButtonFloatingType) => {
   return (
-    <BF.ButtonFloating>
-        <IoAdd color="#ffffff" size={35} />
+    <BF.ButtonFloating onClick={onClick}>
+        <IoAdd color="#ffffff" size={35} className="icon" />
     </BF.ButtonFloating>
   )
 }
