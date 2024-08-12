@@ -4,6 +4,7 @@ import NavBarComponents from "../../Components/NavBar/NavBarComponents";
 import ButtonFloatingComponents from "../../Components/ButtonFloating/ButtonFloatingComponents";
 import { useState } from "react";
 import ModalFinancasComponents from "../../Components/ModalCadastrar/financas/ModalFinancasComponents";
+import TableComponents from "./components/TableComponents";
 
 const FinancasScreens = () => {
   const [cadastroFinanceiro, setCadastroFinanceiro] = useState<boolean>(false);
@@ -20,29 +21,16 @@ const FinancasScreens = () => {
             </F.FinancasContant>
 
             <F.FinancasContantDados>
-              <F.FinancasBarDados>
-                <span className="container2-div1-span1-documentos">
-                  <p>Nome</p>
-                </span>
-                <span className="container2-div1-span2-documentos">
-                  <p>Data</p>
-                </span>
-                <span className="container2-div1-span2-documentos">
-                  <p>Categortia</p>
-                </span>
-                <span className="container2-div1-span2-documentos">
-                  <p>Valor</p>
-                </span>
-              </F.FinancasBarDados>
+              <TableComponents/>
             </F.FinancasContantDados>
 
           </F.FinancasContainer>
-          <ButtonFloatingComponents 
+          <ButtonFloatingComponents
             onClick={() => {
               setCadastroFinanceiro(true);
             }}
           />
-          {cadastroFinanceiro && <ModalFinancasComponents setCadastroFinanceiro={setCadastroFinanceiro}/>}
+          {cadastroFinanceiro && <ModalFinancasComponents setCadastroFinanceiro={setCadastroFinanceiro} />}
         </G.ContainerMain>
       </G.ContentPrincipal>
     </G.ContainerPrincipal>

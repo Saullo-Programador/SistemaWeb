@@ -1,10 +1,7 @@
 import { Link } from "react-router-dom";
 import * as N from "./NavBarStyledComponents";
-import { FaGear, FaCity, FaSackDollar, FaArrowLeft } from "react-icons/fa6";
+import { FaGear, FaSackDollar, FaArrowLeft } from "react-icons/fa6";
 import { GoHomeFill } from "react-icons/go";
-
-
-
 
 const NavBarComponents = () => {
   return (
@@ -27,12 +24,6 @@ const NavBarComponents = () => {
           <Link to="/financas" className="LinkTextNavBar">
             <FaSackDollar color="#1900ffFF" size={20}/>
             <p>Finanças</p>
-          </Link>
-        </N.BoxNavBar>
-        <N.BoxNavBar>
-          <Link to="/patrimonio" className="LinkTextNavBar">
-            <FaCity color="#1900ffFF" size={20}/>
-            <p>Patrimonio</p>
           </Link>
         </N.BoxNavBar>
         <N.BoxNavBar>

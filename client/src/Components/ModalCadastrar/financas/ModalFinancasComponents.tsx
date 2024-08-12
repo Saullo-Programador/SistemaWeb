@@ -1,5 +1,8 @@
 import { FaXmark } from "react-icons/fa6";
 import * as MCF from "./ModalFinancasStyles"
+import InputCadastroModal from "./input/InputCadastroModal";
+import SelectLabels from "./select/selectComponent";
+import { IoAdd } from "react-icons/io5";
 
 interface ModalFinancasComponentProps {
     setCadastroFinanceiro: React.Dispatch<React.SetStateAction<boolean>>;
@@ -20,18 +23,21 @@ const ModalFinancasComponent: React.FC<ModalFinancasComponentProps> = ({ setCada
                     </MCF.ButtonCloseModalFinancas>
                 </MCF.HeaderModalFinancas>
                 <MCF.MainModalFinancas>
-                    
+                   <div className="item-grid">
+                    <InputCadastroModal/>
+                   </div>
+                   <div className="item-grid">
+                    <SelectLabels />
+                   </div>
+                   <div className="item-grid">
+                   <InputCadastroModal/>
+                   </div>
+                   <div className="item-grid">
+                   <InputCadastroModal/>
+                   </div>
                 </MCF.MainModalFinancas>
                 <MCF.FooterModalFinancas>
-                    <button
-                        onClick={() => {
-                            setCadastroFinanceiro(false);
-                        }}
-                        id="cancelPatrimonio"
-                    >
-                        Cancelar
-                    </button>
-                    <button id="AdicionarPatrimonio">Adicionar</button>
+                    <button id="AdicionarPatrimonio"><IoAdd size={30}/></button>
                 </MCF.FooterModalFinancas>
 
             </div>
