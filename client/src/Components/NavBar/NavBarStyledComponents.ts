@@ -6,37 +6,13 @@ export const ContentNav = styled.div`
   justify-content: center;
   align-items: center;
 `
-export const BoxCloseNavBar = styled.div`
-  width: 100%;
-  height: 7%;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-`
-export const ButtonCloseNavBar = styled.div`
-  width: 20%;
-  height: 90%;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  background-color: white;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  box-shadow: 0px 1px 20px 10px rgba(0,0,0,0.1);
-
-  .IconCloseNavBar:hover {
-      cursor: pointer;
-      transition: 500ms ;
-      transform: scale(1.1);
-    }
-`
 export const BoxLogo = styled.div`
   width: 100%;
   height: 22%;
 `
 export const ContainerLinks = styled.nav`
   width: 100%;
-  height: 40%;
+  height: 50%;
   gap: 5px;
   display: flex;
   flex-direction: column;
@@ -47,7 +23,7 @@ export const BoxNavBar = styled.span`
   align-items: center;
   border-radius: 1px;
   width: 80%;
-  height: 18%;
+  height: 15%;
   display: flex;
   justify-content: space-between;
   align-items: center;

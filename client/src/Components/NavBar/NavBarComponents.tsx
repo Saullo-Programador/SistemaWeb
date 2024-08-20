@@ -1,16 +1,11 @@
 import { Link } from "react-router-dom";
 import * as N from "./NavBarStyledComponents";
-import { FaGear, FaSackDollar, FaArrowLeft } from "react-icons/fa6";
+import { FaGear, FaSackDollar} from "react-icons/fa6";
 import { GoHomeFill } from "react-icons/go";
 
 const NavBarComponents = () => {
   return (
     <N.ContentNav>
-      <N.BoxCloseNavBar>
-        <N.ButtonCloseNavBar>
-          <FaArrowLeft color="#1900ffFF" size={20} className="IconCloseNavBar"/>
-        </N.ButtonCloseNavBar>
-      </N.BoxCloseNavBar>
       <N.BoxLogo>
       </N.BoxLogo>
       <N.ContainerLinks>
