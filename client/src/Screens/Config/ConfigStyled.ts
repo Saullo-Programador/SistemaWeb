@@ -29,26 +29,40 @@ export const Subtitle = styled.p`
   font-family: "Roboto", sans-serif;
 `
 export const ConfigContainerInfo = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
-  align-items: center;
-  width: 80%;
-  height: 40%;
-  gap: 10px;
-  padding-top: 20px;
-  margin-right: 10%;
-` 
-export const BoxInfo = styled.span`
   display: flex;
+  align-items: center;
   justify-content: center;
-  flex-direction: column;
-  border-radius: 10px;
-  box-shadow: 0px 2px 20px 2px rgba(0,0,0,0.2);
-  width: 85%;
-  height: 15vh; 
+  width: 100%;
+  height: 40%;
 ` 
-export const TextInfo = styled.p`
+export const BoxItem = styled.span`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 97%;
+  height: 8vh; 
+  border-top: 1px solid #d5d2d5;
+  margin-top:20px;
+` 
+export const TextItem = styled.p`
   font-size: 18px;
-  font-weight: bold;
   font-family: "Roboto", sans-serif;
   `
+export const ButtonExit = styled.span`
+  width: 8%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d5d2db;
+  color: red;
+  border-radius: 10px;
+  border: 1px solid #fffffd;
+
+  &:hover{
+    color: white;
+    background-color: red;
+    cursor: pointer;
+  }
+`;
