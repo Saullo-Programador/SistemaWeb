@@ -12,8 +12,8 @@ export const ModalBackground =styled.div`
   backdrop-filter: blur(1px);
   
   .modalContainer-financas {
-    width: 65%;
-    height: 65%;
+    width: 55%;
+    height: 50%;
     display: flex;
     flex-direction: column; 
     align-items: center;
@@ -53,7 +53,7 @@ export const ButtonCloseModalFinancas = styled.span`
   justify-content: center;
   display: flex;
   align-items: center;
-  margin-top: -15px;
+  margin-top: -17px;
 
   &:hover{
     background: red;
@@ -64,17 +64,10 @@ export const ButtonCloseModalFinancas = styled.span`
 
 
 export const MainModalFinancas = styled.main`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35%, 1fr));
-  gap: 10px;
+  display: flex;
   width: 90%;
   height: 63%;
-  margin-top: 10px;
-
-  .item-grid {
-    align-items: center;
-    display: flex ;
-  }
+  margin-top: 20px;
 `;
 
 export const FooterModalFinancas = styled.footer`
@@ -93,8 +86,8 @@ export const FooterModalFinancas = styled.footer`
     align-items: center;
     display: flex;
     position: absolute;
-    bottom: 20%;
-    right: 20%;
+    bottom: 27%;
+    right: 25%;
     &:hover {
       transform: rotate(1turn);
       transition: 500ms ;
